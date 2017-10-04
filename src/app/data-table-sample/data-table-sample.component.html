@@ -1,3 +1,15 @@
-<p>
-  data-table-sample works!
-</p>
+<p-dataTable 
+  [value]="idols" 
+  [frozenValue]="frozenIdols" 
+  scrollable="true"
+  scrollHeight="200px"
+  frozenWidth="200px"
+  unfrozenWidth="600px"
+>
+  <p-column field="name" header="名前" [style]="{'width':'250px'}" frozen="true"></p-column>
+  <p-column field="id" header="アイドルID" [style]="{'width':'250px'}"></p-column>
+  <p-column field="type" header="タイプ" [style]="{'width':'250px'}"></p-column>
+  <p-column field="cost" header="コスト" [style]="{'width':'250px'}"></p-column>
+  <p-column field="atk" header="攻撃力" [style]="{'width':'250px'}"></p-column>
+  <p-column field="def" header="守備力" [style]="{'width':'250px'}"></p-column>
+</p-dataTable>

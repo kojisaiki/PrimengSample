@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { 
   DataScrollerModule,
+  DataTableModule,
   InputTextModule,
   PanelModule,
 } from 'primeng/primeng';
@@ -30,6 +31,7 @@ import { DataTableSampleComponent } from './data-table-sample/data-table-sample.
      * PrimeNG Modules
      */
     DataScrollerModule,
+    DataTableModule,
     InputTextModule,
     PanelModule,
   ],
