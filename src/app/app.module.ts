@@ -12,11 +12,13 @@ import {
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataScrollerSampleComponent } from './data-scroller-sample/data-scroller-sample.component';
+import { DataTableSampleComponent } from './data-table-sample/data-table-sample.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataScrollerSampleComponent
+    DataScrollerSampleComponent,
+    DataTableSampleComponent
   ],
   imports: [
     BrowserModule,
