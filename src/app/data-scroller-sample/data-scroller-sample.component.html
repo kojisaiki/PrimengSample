@@ -1,0 +1,31 @@
+<p-dataScroller [value]="cars" [rows]="10" [inline]="true" scrollHeight="500px">
+  <p-header>
+      Scroll Down to to Load More
+  </p-header>
+  <ng-template let-car pTemplate="item">
+      <div class="ui-grid ui-grid-responsive ui-fluid" style="font-size:16px;padding:20px;border-bottom:1px solid #D5D5D5">
+          <div class="ui-grid-row">
+              <div class="ui-grid-col-3">
+                  <div class="ui-grid-row">
+                      <div class="ui-grid-col-12">id</div>
+                  </div>
+                  <div class="ui-grid-row">
+                      <div class="ui-grid-col-12">{{car.id}}</div>
+                  </div>
+              </div>
+              <div class="ui-grid-col-3">
+                  <div class="ui-grid-row">
+                      <div class="ui-grid-col-12">name</div>
+                  </div>
+                  <div class="ui-grid-row">
+                      <input pInputText [(ngModel)]="car.name" />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </ng-template>
+</p-dataScroller>
+
+<p-panel header="Data" >
+  {{cars | json}}
+</p-panel>

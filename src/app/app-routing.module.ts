@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { DataScrollerSampleComponent } from './data-scroller-sample/data-scroller-sample.component';
+
+const routes: Routes = [
+  { path: 'data-scroller-sample', component: DataScrollerSampleComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
